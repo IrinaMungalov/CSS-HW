@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo Selectors</title>
+    <style>
+        .tabs {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;  
+            border: 1px solid #bbb;
+        }
+        .tabs-item {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+
+            width: 70px;
+            height: 80px;
+            vertical-align: top;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .tabs-item:hover {
+            background-color: #BBB;
+            transition: 0.25s;
+        }
+        .tabs-link {
+            text-decoration: none;
+            color: #222;
+            
+        }
+        .tabs-options {
+            font-size: 24px;
+            line-height: 5px;
+
+            background-color: #999;
+            height: 24px;
+            width: 24px;
+            border-radius: 32px;
+            transform: translateX(54px) translateY(-78px);
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .tabs-options:hover {
+            opacity: 1.0;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="tabs">
+        <li class="tabs-item">
+            <a class="tabs-link" href="#">
+                <img src="Social-Media-Icons-Glossy-Social-Github.48.png" alt="">
+                <br> 
+                Username
+            </a>
+            <div class="tabs-options">
+                .
+                <br>
+                .
+                <br>
+                .
+            </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="#">
+                <img src="Graphicloads-100-Flat-Email-2.48.png" alt="">
+                <br> 
+                Mail
+            </a>
+            <div class="tabs-options">
+                .
+                <br>
+                .
+                <br>
+                .
+            </div>
+        </li>
+        <li class="tabs-item"><a class="tabs-link" href="#">
+            <img src="Bokehlicia-Captiva-Weather.48.png" alt="">
+            <br> 
+            Weather
+        </a>
+        <div class="tabs-options">
+            .
+            <br>
+            .
+            <br>
+            .
+        </div></li>
+    </ul>
+    
+</body>
+</html>
