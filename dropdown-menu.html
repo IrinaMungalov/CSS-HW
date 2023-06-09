@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DROPDOWN MENU | Pure CSS</title>
+    <style>
+        body {
+            background-color: #333;
+            padding: 30px;
+        }
+        .dropdown .list {
+            display: none;
+            background-color: #EEE;
+            list-style: none;
+            inline-size: 150px;
+            line-height: 20px;
+            padding: 0px;
+            margin: 10px;
+            border-radius: 3px;
+        }
+       
+        .dropdown .list a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+        }
+        .dropdown li {
+            padding: 10px;
+        }
+        
+
+        /* NEW */
+
+        .dropdown label {
+            user-select: none;
+            background-color: #CCC;
+            padding: 15px;
+            font-family: Arial;
+            color: #333;
+            border: 1px solid #999;
+            border-radius: 7px;
+            text-align: center;
+        }
+        .dropdown input {
+            display: none;
+        }
+        .dropdown input:checked + label + .list {
+            display: block;
+        }
+        .dropdown input:checked + label + .list li:hover {
+            background-color: #999;
+            box-shadow: 0 0 2px #222;
+        }
+        .dropdown input:checked + label::after {
+            content: "⮝";
+        }
+        .dropdown label::after {
+            content: "⮟";
+            margin-left: 45px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="dropdown">
+
+        <input type="checkbox" id="toggler"/>
+
+        <label for="toggler">
+            Dropdown 
+        </label>
+
+        <ul class="list">
+            <li><a href="">item 1</a></li>
+            <li><a href="">item 2</a></li>
+            <li><a href="">item 3</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
