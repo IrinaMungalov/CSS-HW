@@ -1,0 +1,52 @@
+body {
+    background-color: #234;
+}
+.preloader {
+    border: 1px dotted red;
+
+    width: 200px;
+    height: 200px;
+}
+.preloader .lg {
+    border: 5px solid #999;
+    border-top-color: transparent;
+    border-radius: 105px;
+    /* HW1: how much lg offset ? 
+            4px on each side / or 8 px width and 8px height*/
+    width: 200px;
+    height: 200px;
+
+    /* NEW */
+    box-sizing: border-box;
+
+    /* NEW */
+    animation: rot 3s infinite linear;
+}
+.preloader .sm {
+    border: 5px solid #2DD;
+    border-radius: 85px;
+    border-right-color: transparent;
+    width: 160px;
+    height: 160px;
+    margin: 10px 0 0 10px;  
+    
+    animation: rotation 3s infinite linear;
+}
+/* NEW */
+/* CSS ANIMATION */
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }    
+}
