@@ -1,0 +1,64 @@
+body {
+    background-color: #555;
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}
+.subscribtion-form {
+    background-color: #333;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+}
+.subscribtion-form h1 {
+    margin-bottom: 10px;
+}
+.subscribtion-form>label,
+.subscribtion-form>.options>div {
+    display: block;
+    padding: 5px;
+}
+
+.subscribtion-form > label > input {
+    padding: 10px;
+    background-color: #ccc;
+    caret-color: rgb(251, 164, 3);
+    font-size: 16px;
+    background: #ecf0f3;
+    padding-left: 20px;
+    height: 30px;
+    border-radius: 30px;
+    box-shadow: inset 3px 4px 3px rgb(251, 164, 3), inset -6px -6px 6px rgba(255, 166, 0, 0.466);
+}
+
+.subscribtion-form > label > input:focus {
+    background-color: #fff;
+    
+}
+.subscribtion-form>button {
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    background: rgb(251, 164, 3);
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 3px 3px 3px rgba(255, 166, 0, 0.466), -4px -4px 4px rgb(251, 164, 3);
+    
+}
+.subscribtion-form>button:hover {
+    background-color: rgb(144, 79, 0);
+}
+.subscribtion-form>.options input {
+    display: none;
+}
+.subscribtion-form>.options label::before {
+    content: "▢";
+    color: #999;
+}
+.subscribtion-form>.options input:checked+label::before {
+    content: "▣";
+    color: orange;
+}
