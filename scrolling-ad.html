@@ -33,7 +33,9 @@
         #ad {
             transform: translateY(-1800px) translateX(200px);
             transition: 1s;
+            
         }
+        
         p:nth-child(6):hover ~ #ad,
         p:nth-child(7):hover ~ #ad {
             transform: translateY(-1500px) translateX(200px);
@@ -51,13 +53,21 @@
             transform: translateY(-600px) translateX(200px);
         }
         .close {
-            text-decoration: none;
             color: #999;
+            text-decoration: none;
         }
-        #ad:focus {
-             display: none;
+        section div>input:checked+label+iframe {
+            display: none; 
         } 
+        #chec {
+            display: none;
+        }
+        section div>input:checked+label>a {
+            display: none; 
+        }
         
+        
+       
     
     </style>
     </head>
@@ -83,11 +93,12 @@
         <p>At voluptas totam dolore velit optio dignissimos commodi doloremque quidem accusamus nisi? Eaque non vel placeat reiciendis rem esse laudantium ducimus quos hic voluptate at sunt fugiat incidunt nemo illo, magnam similique distinctio doloremque quibusdam sit odit nobis ipsum voluptatibus quam. Iure, quaerat. Minima tempora cupiditate non eos excepturi numquam!</p>
     
         <div id="ad">
+            <input type="checkbox" id="chec"/> 
+            <label for="chec">
+                <a class="close">X</a>
+            </label>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/dfOtwMQQNqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            <a class="close" href="#ad">X</a>
-       
-        </div>
+        </div>            
     
     </section>
 
@@ -95,3 +106,4 @@
     
 </body>
 </html>
+
