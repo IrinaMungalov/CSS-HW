@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #EEE;
+      margin: 25px;      
+    }
+    h1,h2,p,ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #business-card{
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      text-align: center;
+      box-shadow: 0 0 20px black;
+      /*  ??? */
+    }
+    #business-card p{
+      padding-left: 5px;
+      font-size: 15px;
+    }
+    #business-card .name{      
+      display: inline-block;
+      padding: 6px;      
+      text-align: right;      
+      font-family: Arial;
+      font-size: 14px;
+      margin-top: 50px;             
+     /*  ??? */
+    }    
+    #business-card .info{
+      border-left: 2px solid GhostWhite;
+      color: GhostWhite;
+      display: inline-block;
+      text-align: left; 
+      padding-left: 6px;
+      font-family: Arial;
+      vertical-align: top;
+      margin-top: 40px;      
+      /*  ??? */    
+    }
+    #business-card .name h1{
+      color: GhostWhite;      
+      /*  ??? */
+    }
+    #business-card .name h2{
+      color: #c2a366;
+      /*  ??? */
+    }
+    #business-card .name small{
+      color: Grey;      
+      /*  ??? */
+    }
+    #business-card .info li{
+      color: grey;
+      font-size: 12px;
+      padding: 3px 0;
+      /*  ??? */
+    }
+    #business-card .info li:first-child::before{
+      content: url(https://icons.iconarchive.com/icons/graphicloads/100-flat/16/phone-call-icon.png);
+      padding: 5px;
+      /*  ??? */
+    }
+    #business-card .info li:nth-child(2)::before{
+      content: url(https://icons.iconarchive.com/icons/graphicloads/100-flat-2/16/mail-icon.png);
+      padding: 5px;
+      /*  ??? */
+    }
+    #business-card .info li:last-child::before{
+      content: url(https://icons.iconarchive.com/icons/graphicloads/100-flat/16/browser-icon.png);
+      padding: 5px;
+      /*  ??? */
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>Lastname</h2>
+      <small>web designer &#47; developer</small>
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City<br>State, Province, Country</p>
+       <ul>
+         <li>+00 22 333444</li>
+         <li>email@somemail.example</li>
+         <li>www.exampledomain.example</li>
+       </ul>
+    </div>
+
+  </div>
+</body>
+</html>
